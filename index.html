@@ -178,7 +178,6 @@
               '*filter': 'setFilter'
           },
           setFilter: function(params) {
-              console.log('params = ' + params);
               window.filter = params.trim() || '';
               app.todoList.trigger('reset');
           }
